@@ -190,6 +190,51 @@
 
 
   
+    <article id="post-Scent" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/10/10/Scent/">Scent</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##React Native 小实例 采用View布局如下视图<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">+ (<span class="keyword">void</span>)getSecurityCodeBindingWithPhoneNumber:(<span class="built_in">NSString</span> *)phoneNumber</div><div class="line">                                      success:(<span class="keyword">void</span> (^)(<span class="built_in">NSDictionary</span> *responseObject))success</div><div class="line">                                      failure:(<span class="keyword">void</span> (^)(<span class="built_in">NSError</span> *error))failure &#123;</div><div class="line">    <span class="built_in">NSMutableString</span> *urlStr = [<span class="built_in">NSMutableString</span> stringWithString:[HTTPEngineGuide getURLWithKey:<span class="string">@"security_code_binding"</span>]];</div><div class="line">    </div><div class="line">    <span class="built_in">NSString</span> *sidStr = <span class="string">@"7"</span>;</div><div class="line">    <span class="built_in">NSString</span> *signStr = [PublicMethod MD5Encrypt:[<span class="built_in">NSString</span> stringWithFormat:<span class="string">@"%@%@%@"</span>,signKey2,phoneNumber,signKey2]];</div><div class="line">    </div><div class="line">    <span class="built_in">NSDictionary</span> *paraDic = @&#123;<span class="string">@"phoneNumber"</span>:phoneNumber,</div><div class="line">                              <span class="string">@"sign"</span>:signStr,</div><div class="line">                              <span class="string">@"sid"</span>:sidStr&#125;;</div><div class="line">    </div><div class="line">    [[HTTPEngine sharedEngine] postRequestWithURL:urlStr</div><div class="line">                                        parameter:paraDic</div><div class="line">                                          success:^(<span class="built_in">NSDictionary</span> *responseObject) &#123;</div><div class="line">                                              <span class="keyword">if</span> (success) success(responseObject);</div><div class="line">                                          &#125; failure:^(<span class="built_in">NSError</span> *error) &#123;</div><div class="line">                                              <span class="keyword">if</span> (failure) failure(error);</div><div class="line">                                          &#125;];</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2014/10/10/Scent/" class="archive-article-date">
+  	<time datetime="2014-10-10T06:18:34.000Z" itemprop="datePublished"><i class="icon-clock"></i>2014-10-10</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-FirstBlog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -224,51 +269,6 @@
     <div class="article-info article-info-index">
       
       <a href="/2014/10/10/FirstBlog/" class="archive-article-date">
-  	<time datetime="2014-10-10T06:18:34.000Z" itemprop="datePublished"><i class="icon-clock"></i>2014-10-10</time>
-</a>
-      
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Scent" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/10/10/Scent/">Scent</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##React Native 小实例 采用View布局如下视图<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">+ (<span class="keyword">void</span>)getSecurityCodeBindingWithPhoneNumber:(<span class="built_in">NSString</span> *)phoneNumber</div><div class="line">                                      success:(<span class="keyword">void</span> (^)(<span class="built_in">NSDictionary</span> *responseObject))success</div><div class="line">                                      failure:(<span class="keyword">void</span> (^)(<span class="built_in">NSError</span> *error))failure &#123;</div><div class="line">    <span class="built_in">NSMutableString</span> *urlStr = [<span class="built_in">NSMutableString</span> stringWithString:[HTTPEngineGuide getURLWithKey:<span class="string">@"security_code_binding"</span>]];</div><div class="line">    </div><div class="line">    <span class="built_in">NSString</span> *sidStr = <span class="string">@"7"</span>;</div><div class="line">    <span class="built_in">NSString</span> *signStr = [PublicMethod MD5Encrypt:[<span class="built_in">NSString</span> stringWithFormat:<span class="string">@"%@%@%@"</span>,signKey2,phoneNumber,signKey2]];</div><div class="line">    </div><div class="line">    <span class="built_in">NSDictionary</span> *paraDic = @&#123;<span class="string">@"phoneNumber"</span>:phoneNumber,</div><div class="line">                              <span class="string">@"sign"</span>:signStr,</div><div class="line">                              <span class="string">@"sid"</span>:sidStr&#125;;</div><div class="line">    </div><div class="line">    [[HTTPEngine sharedEngine] postRequestWithURL:urlStr</div><div class="line">                                        parameter:paraDic</div><div class="line">                                          success:^(<span class="built_in">NSDictionary</span> *responseObject) &#123;</div><div class="line">                                              <span class="keyword">if</span> (success) success(responseObject);</div><div class="line">                                          &#125; failure:^(<span class="built_in">NSError</span> *error) &#123;</div><div class="line">                                              <span class="keyword">if</span> (failure) failure(error);</div><div class="line">                                          &#125;];</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2014/10/10/Scent/" class="archive-article-date">
   	<time datetime="2014-10-10T06:18:34.000Z" itemprop="datePublished"><i class="icon-clock"></i>2014-10-10</time>
 </a>
       
