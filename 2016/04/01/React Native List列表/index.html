@@ -15,19 +15,19 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="此demo不是ListView 组件, 而是view组合的, ListView 组件会在后期更新">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/10/10/hello-world/index.html">
+<meta property="og:title" content="React Native List(简单)列表">
+<meta property="og:url" content="http://yoursite.com/2016/04/01/React Native List列表/index.html">
 <meta property="og:site_name" content="BlackMonitor's Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-10-10T06:06:44.000Z">
+<meta property="og:description" content="此demo不是ListView 组件, 而是view组合的, ListView 组件会在后期更新">
+<meta property="og:image" content="http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E9%A3%8E%E6%99%AF&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&cs=3539900877,2624584791&os=3355574103,2970649412&simid=0,0&pn=12&rn=1&di=240090212700&ln=1994&fr=&fmq=1476800336954_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=&height=&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=11&adpicid=0&pi=0&gsm=0&objurl=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1610%2F09%2Fc0%2F28134119_1476023565298_800x600.jpg&rpstart=0&rpnum=0&adpicid=0">
+<meta property="og:image" content="http://img.blog.csdn.net/20161018172906467">
+<meta property="og:updated_time" content="2016-10-18T14:28:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="React Native List(简单)列表">
+<meta name="twitter:description" content="此demo不是ListView 组件, 而是view组合的, ListView 组件会在后期更新">
+<meta name="twitter:image" content="http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E9%A3%8E%E6%99%AF&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&cs=3539900877,2624584791&os=3355574103,2970649412&simid=0,0&pn=12&rn=1&di=240090212700&ln=1994&fr=&fmq=1476800336954_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=&height=&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=11&adpicid=0&pi=0&gsm=0&objurl=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1610%2F09%2Fc0%2F28134119_1476023565298_800x600.jpg&rpstart=0&rpnum=0&adpicid=0">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -59,7 +59,7 @@ Quick">
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Hello World | BlackMonitor&#39;s Blog</title>
+<title>React Native List(简单)列表 | BlackMonitor&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -263,11 +263,11 @@ Quick">
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-React Native List列表" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/10/10/hello-world/" class="article-date">
-      <time datetime="2016-10-10T06:06:44.000Z" itemprop="datePublished">2016-10-10</time>
+      <a href="/2016/04/01/React Native List列表/" class="article-date">
+      <time datetime="2016-04-01T11:18:34.000Z" itemprop="datePublished">2016-04-01</time>
 </a>
 
 
@@ -282,7 +282,7 @@ Quick">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      React Native List(简单)列表
     </h1>
   
 
@@ -292,6 +292,10 @@ Quick">
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ReactNative/">ReactNative</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -299,15 +303,9 @@ Quick">
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>此demo不是ListView 组件, 而是view组合的, ListView 组件会在后期更新<br><img src="http://image.baidu.com/search/detail?ct=503316480&amp;z=undefined&amp;tn=baiduimagedetail&amp;ipn=d&amp;word=%E9%A3%8E%E6%99%AF&amp;step_word=&amp;ie=utf-8&amp;in=&amp;cl=2&amp;lm=-1&amp;st=undefined&amp;cs=3539900877,2624584791&amp;os=3355574103,2970649412&amp;simid=0,0&amp;pn=12&amp;rn=1&amp;di=240090212700&amp;ln=1994&amp;fr=&amp;fmq=1476800336954_R&amp;fm=&amp;ic=undefined&amp;s=undefined&amp;se=&amp;sme=&amp;tab=0&amp;width=&amp;height=&amp;face=undefined&amp;is=0,0&amp;istype=0&amp;ist=&amp;jit=&amp;bdtype=11&amp;adpicid=0&amp;pi=0&amp;gsm=0&amp;objurl=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1610%2F09%2Fc0%2F28134119_1476023565298_800x600.jpg&amp;rpstart=0&amp;rpnum=0&amp;adpicid=0" alt="风景无处不在"><br><a id="more"></a></p>
+<p><the rest="" of="" contents="" |="" 余下全文=""><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * Sample React Native App</div><div class="line"> * https://github.com/facebook/react-native</div><div class="line"> * @flow</div><div class="line"> */</div><div class="line"></div><div class="line">import React, &#123; Component &#125; from &apos;react&apos;;</div><div class="line">import &#123;</div><div class="line">  AppRegistry,</div><div class="line">  StyleSheet,</div><div class="line">  Text,</div><div class="line">  View</div><div class="line">&#125; from &apos;react-native&apos;;</div><div class="line"></div><div class="line">const Header=require(&apos;./header&apos;);</div><div class="line"></div><div class="line">class FirstRN extends Component &#123;</div><div class="line">  render() &#123;</div><div class="line">    return (</div><div class="line">        &lt;View style=&#123;styles.flex&#125;&gt;</div><div class="line">          &lt;Header&gt;&lt;/Header&gt;</div><div class="line">          &lt;List title=&quot;一线城市楼市退烧 有房源一夜跌价160万&quot;&gt;&lt;/List&gt;</div><div class="line">          &lt;List title=&quot;上海市民称墓地太贵买不起 买房存骨灰&quot;&gt;&lt;/List&gt;</div><div class="line">          &lt;List title=&quot;朝鲜再发视频:摧毁青瓦台 一切化作灰机&quot;&gt;&lt;/List&gt;</div><div class="line">          &lt;List title=&quot;生活大爆炸任务原型都好牛掰&quot;&gt;&lt;/List&gt;</div><div class="line">          &lt;ImportantNews news=&#123;[&apos;一线城市楼市退烧 有房源一夜跌价160万&apos;,</div><div class="line">                                  &apos;上海市民称墓地太贵买不起 买房存骨灰&apos;,</div><div class="line">                                  &apos;上海市民称墓地太贵买不起 买房存骨灰&apos;,</div><div class="line">                                  &apos;上海市民称墓地太贵买不起 买房存骨灰上海市民称墓地太贵买不起 买房存骨灰上海市民称墓地太贵买不起 买房存骨灰上海市民称墓地太贵买不起 买房存骨灰&apos;,</div><div class="line">                                  &apos;上海市民称墓地太贵买不起 买房存骨灰上海市民称墓地太贵买不起 买房存骨灰上海市民称墓地太贵买不起 买房存骨灰&apos;,</div><div class="line">                                  &apos;上海市民称墓地太贵买不起 买房存骨灰&apos;</div><div class="line">                                  ]&#125;&gt;</div><div class="line">          &lt;/ImportantNews&gt;</div><div class="line">        &lt;/View&gt;</div><div class="line"></div><div class="line"></div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">class List extends  Component &#123;</div><div class="line">    render() &#123;</div><div class="line">      return (</div><div class="line">          &lt;View style=&#123;styles.list_item&#125;&gt;</div><div class="line">            &lt;Text style=&#123;styles.list_item_font&#125;&gt;&#123;this.props.title&#125;&lt;/Text&gt;</div><div class="line">          &lt;/View&gt;</div><div class="line">          //&#123;this.props.title&#125; 属性的传递</div><div class="line">      );</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">class ImportantNews extends Component &#123;</div><div class="line"></div><div class="line">  //方法</div><div class="line">  show(title) &#123;</div><div class="line">    alert(title);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  render() &#123;//渲染的方法</div><div class="line"></div><div class="line">    var news = [];//定义数组</div><div class="line">    for(var i in this.props.news) &#123;//循环</div><div class="line">      var  text = (</div><div class="line">          &lt;Text onPress=&#123;this.show.bind(this, this.props.news[i])&#125;</div><div class="line">                numberOfLines=&#123;2&#125;</div><div class="line">                style=&#123;styles.news_item&#125;</div><div class="line">                key=&#123;i&#125;&gt;</div><div class="line"></div><div class="line">            &#123;this.props.news[i]&#125;</div><div class="line">          &lt;/Text&gt;</div><div class="line"></div><div class="line">      );</div><div class="line">      news.push(text);//添加到news数组中</div><div class="line">    &#125;</div><div class="line"></div><div class="line">   return(</div><div class="line">       &lt;View style=&#123;styles.flex&#125;&gt;</div><div class="line">          &lt;Text style=&#123;styles.news_title&#125;&gt;今日要闻&lt;/Text&gt;</div><div class="line">         &#123;news&#125;</div><div class="line">       &lt;/View&gt;</div><div class="line"></div><div class="line">   );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">const styles = StyleSheet.create(&#123;</div><div class="line">    flex: &#123;</div><div class="line">      flex: 1,</div><div class="line">    &#125;,</div><div class="line">    list_item: &#123;</div><div class="line">      height: 40,     //高度</div><div class="line">      marginLeft: 10, //左边距</div><div class="line">      marginRight:10, //右边距</div><div class="line">      borderBottomWidth: 1, //底部边框</div><div class="line">      borderBottomColor: &apos;#ddd&apos;, //底部边框颜色</div><div class="line">      justifyContent: &apos;center&apos;, //justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。</div><div class="line">    &#125;,</div><div class="line">    list_item_font: &#123;</div><div class="line">      fontSize: 16, //字体大小</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    news_title: &#123;</div><div class="line">      fontSize: 20,</div><div class="line">      fontWeight: &apos;bold&apos;,</div><div class="line">      color: &apos;#CD1D1C&apos;,</div><div class="line">      marginRight: 10,</div><div class="line">      marginLeft: 10,</div><div class="line">      marginTop: 10,</div><div class="line">    &#125;,</div><div class="line">    news_item: &#123;</div><div class="line">      marginLeft: 10,</div><div class="line">      marginRight: 10,</div><div class="line">      fontSize: 15,</div><div class="line">      lineHeight: 40,//line-height 属性设置行间的距离（行高）。注释：不允许使用负值。</div><div class="line">      borderBottomWidth: 1, //底部边框</div><div class="line">      borderBottomColor: &apos;#ddd&apos;, //底部边框颜色</div><div class="line"></div><div class="line">    &#125;,</div><div class="line">&#125;);</div><div class="line">AppRegistry.registerComponent(&apos;FirstRN&apos;, () =&gt; FirstRN);</div></pre></td></tr></table></figure></the></p>
+<p><img src="http://img.blog.csdn.net/20161018172906467" alt="这里写图片描述"></p>
 
       
     </div>
@@ -316,13 +314,13 @@ Quick">
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/10/10/hello-world/">Hello World</a></p>
+        <p><span>本文标题:</span><a href="/2016/04/01/React Native List列表/">React Native List(简单)列表</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">赵伟争</a></p>
-        <p><span>发布时间:</span>2016-10-10, 14:06:44</p>
-        <p><span>最后更新:</span>2016-10-10, 14:06:44</p>
+        <p><span>发布时间:</span>2016-04-01, 19:18:34</p>
+        <p><span>最后更新:</span>2016-10-18, 22:28:00</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/10/10/hello-world/" title="Hello World">http://yoursite.com/2016/10/10/hello-world/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/10/10/hello-world/　　作者: 赵伟争" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/04/01/React Native List列表/" title="React Native List(简单)列表">http://yoursite.com/2016/04/01/React Native List列表/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/04/01/React Native List列表/　　作者: 赵伟争" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -334,9 +332,15 @@ Quick">
 
     <nav id="article-nav">
         
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/04/10/React Native 定义组件(简单)/">
+                    Scent
+                </a>
+            </div>
+        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/04/10/React Native 定义组件(简单)/">
+                <a href="/2014/10/10/Scent/">
                     Scent
                 </a>
             </div>
@@ -349,7 +353,7 @@ Quick">
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+            
         
     </div>
     <style>
@@ -385,7 +389,7 @@ Quick">
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Hello World　| BlackMonitor's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"React Native List(简单)列表　| BlackMonitor's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -419,13 +423,15 @@ Quick">
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2016/04/10/React Native 定义组件(简单)/" title="上一篇: Scent">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/04/10/React Native 定义组件(简单)/" title="下一篇: Scent">
+            <a href="/2014/10/10/Scent/" title="下一篇: Scent">
                 <i class="fa fa-angle-right"></i>
             </a>
         
