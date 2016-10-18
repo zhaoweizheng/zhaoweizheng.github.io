@@ -273,6 +273,15 @@
       <time datetime="2016-04-10T11:18:34.000Z" itemprop="datePublished">2016-04-10</time>
 </a>
 
+ 
+    <a href="/2016/04/10/React Native 定义组件(简单)/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/04/10/React Native 定义组件(简单)/" ></span>
+        
+        
+    </a>
 
     </div>
   
@@ -337,6 +346,15 @@
       <time datetime="2016-04-01T11:18:34.000Z" itemprop="datePublished">2016-04-01</time>
 </a>
 
+ 
+    <a href="/2016/04/01/React Native List列表/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/04/01/React Native List列表/" ></span>
+        
+        
+    </a>
 
     </div>
   
@@ -401,6 +419,15 @@
       <time datetime="2014-10-10T06:18:34.000Z" itemprop="datePublished">2014-10-10</time>
 </a>
 
+ 
+    <a href="/2014/10/10/FirstBlog/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2014/10/10/FirstBlog/" ></span>
+        
+        
+    </a>
 
     </div>
   
@@ -466,6 +493,15 @@
       <time datetime="2014-10-10T06:18:34.000Z" itemprop="datePublished">2014-10-10</time>
 </a>
 
+ 
+    <a href="/2014/10/10/Scent/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2014/10/10/Scent/" ></span>
+        
+        
+    </a>
 
     </div>
   
@@ -580,6 +616,27 @@
     </script>
 
 
+    
+        <script>
+            if ($(".left-col").is(":visible")) {
+                var duoshuoQuery = {short_name:"zhaoweizheng"};
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'http://static.duoshuo.com/embed.js';
+                    s.async = true; s.charset = 'UTF-8';
+                    (d.head || d.body).appendChild(s);
+                })();
+
+                $(document).ready(function(){
+                    var $duoshuoCount = $(".ds-thread-count");
+                    $duoshuoCount.bind("DOMNodeInserted", function(e) {
+                        var num = $(this).text().replace(/[^0-9]/ig,"");
+                        $(this).siblings(".count-comment").text(num);
+                        $(this).remove();
+                    })
+                })
+            }
+        </script>
     
 
      
