@@ -412,19 +412,19 @@
 
 
   
-    <article id="post-FirstBlog" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-ios跳转页面 有键盘闪现出来又消失" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2014/10/10/FirstBlog/" class="article-date">
-      <time datetime="2014-10-10T06:18:34.000Z" itemprop="datePublished">2014-10-10</time>
+      <a href="/2016/01/10/ios跳转页面 有键盘闪现出来又消失/" class="article-date">
+      <time datetime="2016-01-10T06:18:34.000Z" itemprop="datePublished">2016-01-10</time>
 </a>
 
  
-    <a href="/2014/10/10/FirstBlog/#comments" title="查看评论">
+    <a href="/2016/01/10/ios跳转页面 有键盘闪现出来又消失/#comments" title="查看评论">
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2014/10/10/FirstBlog/" ></span>
+            <span class="ds-thread-count"  data-thread-key="2016/01/10/ios跳转页面 有键盘闪现出来又消失/" ></span>
         
         
     </a>
@@ -440,7 +440,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/10/10/FirstBlog/">FirstBlog</a>
+      <a class="article-title" href="/2016/01/10/ios跳转页面 有键盘闪现出来又消失/">ios跳转页面 有键盘闪现出来又消失</a>
     </h1>
   
 
@@ -450,8 +450,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <p><Excerpt in index | 首页摘要><br>仅仅是随笔而已<br>
-          
+        <p>#ios跳转页面 有键盘闪现出来又消失<br>由于项目中反馈在有textField的页面时，页面跳转会出现键盘闪现出来又消失，<br>原因是由于键盘动画尚未结束， 就push 或 pop 了；<br>网上有说法采用：  [self performSelector:@selector(xxx) withObject:nil afterDelay:0.25];延迟0.25秒， 但结果也不是很理想<br>在 iOS 8.3，dismiss alert view时系统会尝试恢复之前的keyboard input<br>官方推荐使用UIAlertController<br>因此， 判断8.0之前的版本使用UIAlertView， 之后使用UIAlertController </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">if (SYSTEM_VERSION&gt;=8.0) &#123;</div><div class="line">               UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@&quot;温馨提示&quot;   message:@&quot;该手机号已经注册,直接去登录呗?&quot; preferredStyle:UIAlertControllerStyleAlert];</div><div class="line">               UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@&quot;取消&quot; style:UIAlertActionStyleCancel handler:nil];</div><div class="line">               UIAlertAction *okAction = [UIAlertAction actionWithTitle:@&quot;登录&quot; style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) &#123;</div><div class="line">                   [self logingVCller];</div><div class="line">               &#125;];</div><div class="line">               [alertController addAction:cancelAction];</div><div class="line">               [alertController addAction:okAction];</div><div class="line">               [self presentViewController:alertController animated:YES completion:nil];</div><div class="line">               </div><div class="line">           &#125; else &#123;</div><div class="line">               UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@&quot;温馨提示&quot; message:@&quot;该手机号已经注册,直接去登录呗?&quot; delegate:self cancelButtonTitle:@&quot;取消&quot; otherButtonTitles:@&quot;登录&quot;, nil];</div><div class="line">               [alert show];</div><div class="line">              </div><div class="line">           &#125;</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -461,13 +461,9 @@
 
       
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li></ul>
     </div>
 
-      
-        <p class="article-more-link">
-          <a href="/2014/10/10/FirstBlog/#more">阅读全文 >></a>
-        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -542,6 +538,79 @@
       
         <p class="article-more-link">
           <a href="/2014/10/10/Scent/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-FirstBlog" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/10/10/FirstBlog/" class="article-date">
+      <time datetime="2014-10-10T06:18:34.000Z" itemprop="datePublished">2014-10-10</time>
+</a>
+
+ 
+    <a href="/2014/10/10/FirstBlog/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2014/10/10/FirstBlog/" ></span>
+        
+        
+    </a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/10/10/FirstBlog/">FirstBlog</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><Excerpt in index | 首页摘要><br>仅仅是随笔而已<br>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2014/10/10/FirstBlog/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
